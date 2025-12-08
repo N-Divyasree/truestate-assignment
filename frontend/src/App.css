@@ -1,0 +1,97 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f7f7f8;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1300px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.dashboard-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* FILTER BAR */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filter-select,
+.filter-input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  font-size: 14px;
+}
+
+.filter-select:hover,
+.filter-input:hover {
+  border-color: #6366f1;
+}
+
+/* TAG DROPDOWN */
+.tag-dropdown-container {
+  position: relative;
+}
+
+.tag-trigger {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+}
+
+.tag-panel {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 200px;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.tag-item {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background: #f0f2f5;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background: #fafafa;
+}
